@@ -17,9 +17,12 @@ public class PatientTests {
     private PatientService patientService;
     @Test
     public void testPatientRepository(){
-        List<Patient> patientList=patientRepository.findAll();
+        List<Patient> patientList=patientRepository.findAllPatientWithAppointment();
         System.out.println(patientList);
     }
+
+
+
     @Test
     public void testTransactionMethods(){
 //        Patient patient=patientService.getPatientById(1L);
